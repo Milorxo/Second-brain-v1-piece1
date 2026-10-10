@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second Brain</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Past conversations">
+      <div class="side-head">
+        <strong>Second Brain</strong>
+        <button type="button" id="new-conversation" class="ghost">New</button>
+      </div>
+      <div class="list" id="conversation-list"></div>
+    </aside>
+
+    <main class="main">
+      <header class="top">
+        <button type="button" id="menu" class="ghost menu">Past</button>
+        <div class="status" id="status">Loading</div>
+      </header>
+
+      <div class="banner" id="banner" role="alert" hidden></div>
+
+      <div class="messages" id="messages" aria-live="polite"></div>
+
+      <form class="composer" id="composer">
+        <textarea id="input" rows="1" placeholder="Type, or press Mic and talk" aria-label="Your message"></textarea>
+        <button type="button" id="mic" class="ghost" aria-pressed="false">Mic</button>
+        <button type="submit" id="send">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <template id="welcome">
+    <div class="welcome">
+      <h1>Talk about anything.</h1>
+      <p>Ideas, plans, things you are learning, how your day went. Everything you write is saved as a plain file on this computer.</p>
+      <p class="small">This first piece cannot see your past conversations yet. Searching your history comes next.</p>
+    </div>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "model": "claude-sonnet-5-5",
+  "maxTokens": 2000,
+  "memoryDir": "./memory",
+  "port": 3737,
+  "contextMessages": 40
+}
